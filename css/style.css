@@ -1,0 +1,53 @@
+* {
+    margin: 0; 
+}
+body{
+    
+    background-color: darkgray;
+}
+div{
+    background-color: white;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-auto-columns: auto; 
+    background-color: rgb(197, 197, 197);
+    gap: 20px;
+    overflow: auto;
+}
+.sbig_content{
+    background: url("../img/car.png")  no-repeat;
+    grid-column: 2/4;
+    width: 100%;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.sbig_content > .november{
+    grid-row: 3;
+    color: white;
+}
+.sbig_content > .text{
+    grid-area: 4/1/4/3;
+    color: white;
+    font-size: 24pt;
+}
+.november{
+    color: darkgray;
+    font-size: 14pt;
+    padding: 10px;
+}
+.text{
+    font-size: 19pt;
+    padding: 10px;
+}
+.girlscontent{
+    grid-column: 2/3;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
